@@ -6,3 +6,20 @@ console.log('***** Cart Functions *****');
 
 let basket = [];
 console.log(basket); //Statement output: [] (empty array)
+
+// 2. Create a function called addItem. It should:
+  // Take an input paramter for a string 'item'
+  // Add the new item to the global array 'basket'
+  // Return TRUE indiciating the item was added
+
+function addItem(item) {
+  console.log('in addItem');
+  basket.push(item); // adds item to basket array
+  return true; //verifies item was added to basket
+} // end addItem
+
+// TESTING basket function
+// addItem('bread');
+// console.log(basket);
+// addItem('berries');
+// console.log(basket); //Statement output: ['bread', 'berries']
