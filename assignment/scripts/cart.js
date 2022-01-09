@@ -60,3 +60,11 @@ function empty() {
 // TESTING empty function
 empty();
 console.log(basket); // Statement output: [] (basket is now empty)
+
+
+// STRETCH GOALS //
+
+// 1. Add a global const named 'maxItems' and set it to 5.
+
+const maxItems = 5;
+console.log(maxItems); // Statement output: 5
