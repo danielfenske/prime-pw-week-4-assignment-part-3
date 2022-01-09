@@ -35,11 +35,28 @@ console.log(basket); //Statement output: ['bread', 'berries']
 
 function listItems() {
   console.log('in listItems');
-  for (let i=0; i<basket.length; i++) {
-    console.log(basket[i]);
-  }
+  for (let i=0; i<basket.length; i++) { // Loops through basket array
+    console.log(basket[i]); // Logs to console values within basket array (items)
+  } // end loop
 } // end listItems
 
 
-// TESTING basket function
+// TESTING listItems function
 listItems(); // Statement output: items in basket logged on separate lines ('bread', 'berries')
+
+
+
+// 4. Create a function called 'empty'. It should:
+  // Reset the basket to an empty array
+
+function empty() {
+  console.log('in empty');
+  while (basket.length > 0) { // Continues to run as long as values (items) exist in basket
+    basket.pop(); // Removes an item from the basket each time while loop is run
+  } // end while loop
+} // end empty
+
+
+// TESTING empty function
+empty();
+console.log(basket); // Statement output: [] (basket is now empty)
