@@ -68,3 +68,39 @@ console.log(basket); // Statement output: [] (basket is now empty)
 
 const maxItems = 5;
 console.log(maxItems); // Statement output: 5
+
+
+
+// 2. Create a function called 'isFull'. It should:
+  // Return false if the basket contains less than the max number of items
+  // Return true if the basket contains equal or more than maxItems (otherwise)
+
+function isFull() {
+  console.log('in isFull');
+  if (basket.length < maxItems) {
+    return false;
+  } else {
+    return true;
+  }
+} // end isFulls
+
+
+// Adding items to basket array
+addItem('milk');
+addItem('veggies');
+addItem('bacon');
+console.log(basket);
+
+// TESTING isFull function (for false)
+
+console.log(isFull()); // Statement output: true
+
+// Adding items to basket array
+addItem('fruit');
+addItem('snacks');
+addItem('bread');
+console.log(basket);
+
+// TESTING isFull function (for true)
+
+console.log(isFull()); // Statement output: false
